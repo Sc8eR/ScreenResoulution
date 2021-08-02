@@ -8,6 +8,11 @@ pipeline {
     }
 
     stage("test the app") {
+      when {
+        expression {
+          BRANCH_NAME == 'master'
+        }
+      }
           steps {
         echo 'This is a test stage'
       }
