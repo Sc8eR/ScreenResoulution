@@ -9,8 +9,10 @@ pipeline {
 
     stage('test the app') {
       steps {
-        fileExists 'App123.xml'
-        echo 'This is a test stage'
+			if(fileExists 'App123.xml')
+			{
+				echo 'This is a test stage123'
+			}
       }
     }
 
