@@ -3,21 +3,21 @@ pipeline {
 	
 	stages {
 	
-		stage ("build") {
+		stage ("build the app") {
 			
 			steps {
 				echo 'This is a build stage'
 			}
 		}
 		
-		stage ("test") {
+		stage ("test the app") {
 			
 			steps {
 				echo 'This is a test stage'
 			}
 		}
 		
-		stage ("deploy") {
+		stage ("deploy the app") {
 			
 			steps {
 				echo 'This is a deploy stage'
