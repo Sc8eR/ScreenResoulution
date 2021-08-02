@@ -10,7 +10,7 @@ pipeline {
     stage('test the app') {
       steps {
 
-          def exists = fileExists 'ScreenResolution\\App.xaml'
+          def exists = fileExists 'C:\\Temp\\Test.pdf'
           if (exists){
               echo 'Test stage OK'
             }
