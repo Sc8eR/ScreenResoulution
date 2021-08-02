@@ -8,8 +8,6 @@ pipeline {
     }
 
     stage('test the app') {
-      steps {
-
           def exists = fileExists 'C:\\Temp\\Test.pdf'
           if(exists){
               echo 'Test stage OK'
@@ -17,8 +15,7 @@ pipeline {
           else{
               echo 'Test stage FAILED'
             }
-          }
-        }
+    }
 
     stage('deploy the app') {
       steps {
