@@ -11,9 +11,12 @@ pipeline {
       steps {
 			if (fileExists(ScreenResolution.sln)){
 			
-				echo 'This is a test stage123'
-				
+				echo 'Test stage OK'
 				}
+
+        else {
+          echo 'Test stage FAILED'
+        }
       }
     }
 
