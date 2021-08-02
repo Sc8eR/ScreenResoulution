@@ -9,14 +9,16 @@ pipeline {
 
     stage('test the app') {
       steps {
-			if (fileExists('ScreenResolution.sln')){
-				  echo 'Test stage OK'
-				}
-        else {
-          echo 'Test stage FAILED'
+
+          def exists = fileExists 'ScreenResolution\\App.xaml'
+          if (exists){
+              echo 'Test stage OK'
+            }
+          else {
+              echo 'Test stage FAILED'
+            }
+          }
         }
-      }
-    }
 
     stage('deploy the app') {
       steps {
