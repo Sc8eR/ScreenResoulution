@@ -9,11 +9,9 @@ pipeline {
 
     stage('test the app') {
       steps {
-			if (fileExists(ScreenResolution.sln)){
-			
-				echo 'Test stage OK'
+			if (fileExists('ScreenResolution.sln')){
+				  echo 'Test stage OK'
 				}
-
         else {
           echo 'Test stage FAILED'
         }
