@@ -15,7 +15,7 @@ pipeline {
       }
           steps {
             
-            echo GIT_CHECKOUT_DIR
+            echo BUILD_NUMBER
       }
     }
 
