@@ -15,7 +15,7 @@ pipeline {
       }
           steps {
             echo 'This is a test stage'
-            echo GIT_CHECKOUT_DIR
+            echo '%GIT_CHECKOUT_DIR%'
       }
     }
 
