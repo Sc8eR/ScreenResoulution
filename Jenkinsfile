@@ -11,10 +11,10 @@ pipeline {
       steps {
 
           def exists = fileExists 'C:\\Temp\\Test.pdf'
-          if (exists){
+          if(exists){
               echo 'Test stage OK'
             }
-          else {
+          else{
               echo 'Test stage FAILED'
             }
           }
