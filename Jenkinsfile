@@ -14,7 +14,7 @@ pipeline {
         }
       }
           steps {
-            
+            echo 'This is a test stage'
             echo BUILD_NUMBER
       }
     }
