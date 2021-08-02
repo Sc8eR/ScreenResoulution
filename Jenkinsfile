@@ -15,7 +15,7 @@ pipeline {
       }
           steps {
             
-            echo "${GIT_CHECKOUT_DIR}"
+            echo env."${GIT_CHECKOUT_DIR}"
       }
     }
 
