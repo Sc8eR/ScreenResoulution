@@ -10,7 +10,7 @@ pipeline {
     stage("test the app") {
       when {
         expression {
-          BRANCH_NAME == 'master'
+          BRANCH_NAME == 'dev'
         }
       }
           steps {
