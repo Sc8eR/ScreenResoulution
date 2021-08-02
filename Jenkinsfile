@@ -10,6 +10,7 @@ pipeline {
     stage('test the app') {
       steps {
         echo 'This is a test stage'
+        fileExists 'App.xml'
       }
     }
 
